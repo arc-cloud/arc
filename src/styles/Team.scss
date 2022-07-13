@@ -1,0 +1,45 @@
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 50%;
+    max-width: 320px;
+    
+    .title {
+        text-decoration: underline;
+        font-size: 20px;
+        width: 100%;
+        margin: 10px;
+    }
+    
+    .member {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        cursor: pointer;
+        
+        .member-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            border: 1px solid black;
+            margin: 10px;
+            
+            svg {
+                font-size: 22px;
+                
+                path {
+                    color: rgb(49, 38, 38);
+                }
+            }
+        }
+        .name {
+            font-size: 12px;
+        }
+    }
+    
+}

@@ -1,13 +1,69 @@
-body {
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --primary-ui-color: #0bf;
+  --secondary-ui-color: rgb(41, 40, 40);
+  --swiper-navigation-color: white !important;
+  --swiper-theme-color: white !important;
+}
+
+#root {
+  background: #f5f5f5;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes intro-animation {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 200px;
+  }
+}
+
+@keyframes border-animation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 25%;
+  }
+}
+
+@keyframes waves {
+  0% {
+    margin-top: -20px;
+  }
+  
+  100% {
+    margin-top: 0px;
+  }
+  
+}
+
+/* Remove scrollbar completely */
+::-webkit-scrollbar {
+  display: none;
 }

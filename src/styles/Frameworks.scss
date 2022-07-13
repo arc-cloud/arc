@@ -1,0 +1,51 @@
+.frameworks{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    
+    .title {
+        text-decoration: underline;
+        font-size: 20px;
+        width: 100%;
+        margin: 5px;
+        margin-top: -20px;
+    }
+    
+    .end {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .sub-title {
+            font-size: 18px;
+            width: 100%;
+            text-decoration: underline;
+        }
+
+        .framework {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 4px;
+            cursor: pointer;
+            
+            svg {
+                font-size: 40px;
+
+                path {
+                    color: rgb(0, 0, 0);
+                }
+            }
+
+            .name {
+                font-size: 20px;
+            }
+        }
+        
+    }
+    
+}
