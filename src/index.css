@@ -24,6 +24,11 @@
   flex-direction: column;
 }
 
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
 /* Animations */
 @keyframes fadeIn {
   0% {
