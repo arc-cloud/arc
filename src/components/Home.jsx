@@ -6,14 +6,14 @@ import CustomSwiper from './CustomSwiper';
 
 /* ---- */
 const Welcome = () => {
-	// Create reference to store the DOM element containing the animation
-	const el = useRef(null);
+  // Create reference to store the DOM element containing the animation
+  const el = useRef(null);
   // Create reference to store the Typed instance itself
-	const typed = useRef(null);
-
+  const typed = useRef(null);
+  
   useEffect(() => {
     const options = {
-    	strings: ['^1200Welcome to ' ],
+      strings: ['^1200Welcome to ' ],
       typeSpeed: 60,
       loop: false,
       cursorChar: '',
@@ -26,41 +26,48 @@ const Welcome = () => {
       typed.current.destroy();
     }
   }, [])
-
+  
   return (
     <div className="wrap">
-      <div className="type-wrap">
-        <span style={{ whiteSpace: 'pre' }} ref={el} />
-      </div>
+    <div className="type-wrap">
+    <span style={{ whiteSpace: 'pre' }} ref={el} />
     </div>
-  );
-}
-
-const Home = () => {
+    </div>
+    );
+  }
+  
+  const Home = () => {
     return (
-        <>
-            <div className="welcome-wrapper">
-              <span className='typed'>
-                <Welcome />
-                <div className='space'>|</div>
-                <span className='brand'>arc.dev</span>
-              </span>
-              <span className="motto">If you can imagine it, we can build it.</span>
-            </div>
-            <div className="main-wrapper">
-              <div className="about">
-                <div className="border"></div>
-                <div className='text'>
-                We are a team of designers, developers, and product managers that are passionate about building beautiful, responsive, and accessible user interfaces.
-                </div>
+      <>
+      <div className="welcome-wrapper">
+        <span className='typed'>
+          <Welcome />
+          <div className='space'>|</div>
+          <span className='brand'>arc.dev</span>
+        </span>
+        <span className="motto">If you can imagine it, we can build it.</span>
+      </div>
 
-                <div className="swiper-wrapper">
-                  <CustomSwiper />
-                </div>
-              </div>
-              </div>
-        </>
-    )
-}
 
-export default Home;
+      <div className="main-wrapper">
+        <div className="about">
+          <div className="title">About us.</div>
+          <div className='gif'>
+            <img src={require("../assets/images/arc-anim_2.gif")} alt="gif" />
+          </div>
+          <div className='text'>
+            We are a team of designers, developers, and product managers that are passionate about building beautiful, responsive, and accessible user interfaces.
+          </div>
+        </div>
+        
+        <div className="border"></div>
+        
+        <div className="swiper-wrapper">
+          <CustomSwiper />
+        </div>
+      </div>
+      </>
+      )
+    }
+    
+    export default Home;
