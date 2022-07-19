@@ -72,3 +72,13 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+ body {
+  height: auto;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: proximity;
+  }
+}
